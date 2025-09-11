@@ -14,9 +14,8 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "https://your-frontend.vercel.app",
                                 "http://localhost:5173",
-                                "https://sparkle-clean-website.vercel.app")
+                                "https://sparkle-clean-frontend.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
