@@ -19,7 +19,7 @@ public class Booking implements Serializable {
     private Long id;
 
     @Column(unique = true, nullable = false, length = 20)
-    private String booking_number;
+    private String bookingNumber;
 
     @Column(nullable = false, length = 100)
     private String name;
