@@ -18,7 +18,7 @@ public class Booking implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true, nullable = false, length = 20)
+    @Column(name = "bookingNumber", unique = true, nullable = false, length = 20)
     private String bookingNumber;
 
     @Column(nullable = false, length = 100)
