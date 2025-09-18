@@ -10,16 +10,18 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173") // allow frontend React app
+@CrossOrigin(origins = { "http://localhost:5173", "https://sparkle-clean-frontend.vercel.app" }) // allow frontend React
 @RequiredArgsConstructor // ✅ generates constructor injection automatically
 public class AuthController {
 
     private final AuthService authService;
 
     // ✅ DTO for login payload
-    public record LoginRequest(String password) {}
+    public record LoginRequest(String password) {
+    }
 
-    public record ApiResponse<T>(boolean success, T data, String message) {}
+    public record ApiResponse<T>(boolean success, T data, String message) {
+    }
 
     // ✅ Login with password
     @PostMapping("/login")
