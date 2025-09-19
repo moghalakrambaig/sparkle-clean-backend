@@ -16,9 +16,11 @@ public class AuthService {
 
     // ✅ Validate login (optimized query)
     public boolean validatePassword(String password) {
-        return repo.findAll().stream()
-                .anyMatch(p -> p.getPassword().equals(password));
-    }
+    List<AdminPassword> all = repo.findAll();
+    System.out.println("DEBUG passwords from DB: " + all);
+    return all.stream().anyMatch(p -> p.getPassword().equals(password));
+}
+
 
     // ✅ Fetch all admin passwords
     public List<AdminPassword> getAllPasswords() {
