@@ -17,7 +17,7 @@ import java.util.Optional;
 }) // Allow React frontend
 @RequiredArgsConstructor
 public class BookingController {
-
+    
     private final BookingService bookingService;
 
     // ✅ Generic API Response wrapper
