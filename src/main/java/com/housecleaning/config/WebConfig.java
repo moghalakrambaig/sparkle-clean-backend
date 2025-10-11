@@ -15,7 +15,7 @@ public class WebConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "https://sparkle-clean-frontend.vercel.app")
+                                "https://sparklecleaning.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };

@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = { "https://sparkle-clean-frontend.vercel.app",
+@CrossOrigin(origins = { "https://sparklecleaning.vercel.app",
         "http://localhost:5173" }) // allow frontend React
 @RequiredArgsConstructor // ✅ generates constructor injection automatically
 public class AuthController {

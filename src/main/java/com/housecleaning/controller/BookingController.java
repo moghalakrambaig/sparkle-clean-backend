@@ -12,7 +12,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/bookings") // 🔑 removed the extra "/api"
 @CrossOrigin(origins = {
-        "https://sparkle-clean-frontend.vercel.app",
+        "https://sparklecleaning.vercel.app",
         "http://localhost:5173"
 }) // Allow React frontend
 @RequiredArgsConstructor
